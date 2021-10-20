@@ -1,0 +1,76 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static',filename='Contact.css') }}" media="screen">
+
+      <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Contact Us<img src="{{ url_for('static',filename='images/24.png') }}" height="100px" width="100px" style="margin-left: 20px;"></h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="info-box">
+              <img src="https://video-public.canva.com/VADqk4hgB38/videos/b163b73b4b.gif" height="130px" width="100px">
+              <h3>Our Address</h3>
+              <p>Sabarmati, Ahmedabad - 380005 </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+             <img src="https://video-public.canva.com/VADqk42hIac/videos/aa8e2c7517.gif" height="130px" width="130px">
+              <h3>Email Us</h3>
+              <p><a href="mailto:contact.ideaboat@gmail.com" style="text-decoration: none;color: black;">contact.ideaboat@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <img src="https://video-public.canva.com/VADqk16LLA4/videos/b51d8551e3.gif" height="110px" width="110px">
+              <h3 class="mt-4">Call Us</h3>
+              <p class="mt-4"><a href="tel:919023013754" style="text-decoration: none;color: black;"> +91 9023013754 </a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="/Contact#contact" method="post" role="form">
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                 
+                </div>
+                <div class="col-lg-6 form-group">
+                    <input type="number" class="form-control" name="number" id="number" placeholder="Number" data-rule="minlen:10" data-msg="Please enter 10 digit number" required>
+                
+                 
+                </div>
+              </div>
+              <div class="form-group">
+                 <input type="email" class="form-control" name="email1" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+                  
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                
+              </div>
+              <div class="text-center"><input type="submit" class="btn btn-dark rounded px-3 py-2" id="btn" style="" name="submit" value="Send Message"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+{% endblock %}

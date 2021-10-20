@@ -1,0 +1,11 @@
+{
+  "params" : {
+    "local_server" : "True",
+    "local_uri" : "mysql://root:@localhost/ideaboat",
+    "server_uri" : "mysql://root:@localhost/ideaboat",
+    "gmail-user" : "jm27504314@gmail.com",
+    "gmail-password" : "Manav@123",
+    "upload_folder" : "C:\\Users\\Manav\\PycharmProjects\\FlaskLearning\\static\\upload"
+
+  }
+}

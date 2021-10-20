@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+     
+<link rel="stylesheet" href="{{ url_for('static',filename='Blog.css') }}" media="screen">
+
+
+
+    <section class="u-clearfix u-grey-80 u-section-1" id="sec-d9d0">
+      <div class="h2 container text-center" style="font-weight: bolder;text-align: center;"> Blog </div>
+ <div class="h6 container text-center mt-3" style="text-align: center;">
+   An ocean full of content and knowledge filled in just for you! 
+ </div>
+
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><!--blog--><!--blog_options_json--><!--{"type":"Recent","source":"","tags":"","count":""}--><!--/blog_options_json-->
+        <div class="u-blog u-expanded-width u-blog-1">
+          <div class="u-repeater u-repeater-1"><!--blog_post-->
+            <div class="u-align-left u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <a class="u-post-header-link" href="/Blog1"><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-1" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-07at11.19.58PM.jpeg') }}" data-image-width="960" data-image-height="938"><!--/blog_post_image-->
+                </a>
+                <div class="u-align-center u-container-style u-grey-5 u-group u-video-cover u-group-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2"><!--blog_post_metadata-->
+                    <div class="u-blog-control u-metadata u-metadata-1"><!--blog_post_metadata_date-->
+                      <span class="u-meta-date u-meta-icon"><!--blog_post_metadata_date_content-->Tue Jun 08 2021<!--/blog_post_metadata_date_content--></span><!--/blog_post_metadata_date-->
+                    </div><!--/blog_post_metadata--><!--blog_post_header-->
+                    <h4 class="u-blog-control u-text u-text-1">
+                      <a class="u-post-header-link" href="/Blog1"><!--blog_post_header_content-->7 secrets of Enterprenuer Mindset<!--/blog_post_header_content--></a>
+                    </h4><!--/blog_post_header--><!--blog_post_content-->
+                    <div class="u-blog-control u-post-content u-text u-text-2 mt-2"><!--blog_post_content_content-->Entrepreneur Mindset is a set of skills used by people to identify the opportunities<!--/blog_post_content_content--></div><!--/blog_post_content-->
+                    <a href="/Blog1" class="u-active-none u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-1">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+           <div class="u-align-left u-blog-post u-container-style u-repeater-item u-video-cover">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <a class="u-post-header-link" href="/Blog2">
+                  <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-07at11.19.57PM.jpeg') }}" data-image-width="955" data-image-height="538">
+                </a>
+                <div class="u-align-center u-container-style u-grey-5 u-group u-group-3">
+                  <div class="u-container-layout u-valign-middle u-container-layout-6">
+                    <div class="u-blog-control u-metadata u-metadata-3">
+                      <span class="u-meta-date u-meta-icon">Tue Jun 10 2021</span>
+                    </div>
+                    <h4 class="u-blog-control u-text u-text-5">
+                      <a class="u-post-header-link" href="/Blog2">Seek Discomfort</a>
+                    </h4>
+                    <div class="u-blog-control u-post-content u-text u-text-6">To me, Seek Discomfort means wanting more from life.</div>
+                    <a href="/Blog2" class="u-active-none u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-3">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="u-align-left u-blog-post u-container-style u-repeater-item u-video-cover">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <a class="u-post-header-link" href="/Blog3">
+                  <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="{{ url_for('static',filename='images/123.png') }}" data-image-width="955" data-image-height="538">
+                </a>
+                <div class="u-align-center u-container-style u-grey-5 u-group u-group-3">
+                  <div class="u-container-layout u-valign-middle u-container-layout-6">
+                    <div class="u-blog-control u-metadata u-metadata-3">
+                      <span class="u-meta-date u-meta-icon">Tue Jun 09 2021</span>
+                    </div>
+                    <h4 class="u-blog-control u-text u-text-5">
+                      <a class="u-post-header-link" href="/Blog3">Achieving Milestones of Life</a>
+                    </h4>
+                    <div class="u-blog-control u-post-content u-text u-text-6">To gain goals in your life, come out of your comfort zone.</div>
+                    <a href="/Blog3" class="u-active-none u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-3">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

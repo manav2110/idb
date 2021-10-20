@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <meta name="viewport" content="width=350, user-scalable=no"> -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="1, 2, 3, 4, 5, 6">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='nicepage.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='nicepage.js') }}" defer=""></script>
+   
+    <link rel="icon" href="{{ url_for('static',filename='images/favicon.png') }}">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+   <link href="{{ url_for('static',filename='assets/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static',filename='assets/vendor/counterup/counterup.min.js') }}"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>  
+
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='manualEdit.css') }}">
+    
+    
+    <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "url": "index.html",
+    "logo": "images/Idblogo.png"
+}</script>
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    <style type="text/css">
+
+#footer {
+  background: #587187;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #5c768d;
+  border-top: 1px solid #768fa6;
+  border-bottom: 1px solid #67839c;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #768fa6;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #428bca;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #9eccf4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #9eccf4;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #428bca;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #5295ce;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #9eccf4;
+}    </style>
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-gradient" style="background-image: linear-gradient(#f5f7fa, #e9f2fa);">
+
+
+
+  <header class="u-clearfix u-header u-palette-5-light-2 u-sticky u-header" id="sec-3e9c"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="{{ url_for ('static',filename='images/Idblogo.png') }}" class="u-logo-image u-logo-image-1" data-image-width="84">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-border-radius u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-decoration u-custom-text-hover-color u-custom-text-shadow u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 16px; font-size: calc(1em + 8px);">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+           <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-black u-nav-link u-palette-5-light-2 u-radius-22 u-text-active-palette-1-base u-text-hover-white" href="/" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-black u-nav-link u-palette-5-light-2 u-radius-22 u-text-active-palette-1-base u-text-hover-white" href="/Services" style="padding: 10px 20px;">Services</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-black u-nav-link u-palette-5-light-2 u-radius-22 u-text-active-palette-1-base u-text-hover-white" href="/Portfolio" style="padding: 10px 20px;">Portfolio</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-black u-nav-link u-palette-5-light-2 u-radius-22 u-text-active-palette-1-base u-text-hover-white" href="/Blog" style="padding: 10px 20px;">Blog</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-black u-nav-link u-palette-5-light-2 u-radius-22 u-text-active-palette-1-base u-text-hover-white" href="/Contact" style="padding: 10px 20px;">Contact</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Services" style="padding: 10px 20px;">Services</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Portfolio" style="padding: 10px 20px;">Portfolio</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Blog" style="padding: 10px 20px;">Blog</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Contact" style="padding: 10px 20px;">Contact</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+
+
+{% block body %} {% endblock %}
+
+
+<footer id="footer" class="" style="color: white;background-color: black;margin-top:100px;">
+    <div class="footer-top" style="color: white;background-color: black;">
+      <div class="container" style="color: white;background-color: black;">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-info">
+            <h3>IdeaBoat</h3>
+            <p>
+              <br>
+              Sabarmati,<br>Ahmedabad - 380005<br><br>
+              <strong>Phone:</strong> +91 9023013754<br>
+              <strong>Email:</strong> contact.ideaboat@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="blank" href="{{ url_for('static',filename='assets/img/images/IdeaBoat.pdf') }}" class="mail" download="download"><i class="bx bx-id-card"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
+            <h4>Useful Links</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services">Services</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio">Portfolio</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Blog">Blog</a></li>
+                <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Contact">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
+            <h4>Our Services</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_6c2b">Web Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_45e4">Digital Card</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_1682">Product shoot/ Catalogue</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_4fc4">Graphic Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_6c2b">App Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Services#carousel_8e00">Social Media Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-links">
+            <h4>Companies with Us.</h4>
+            
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#carousel_c523">Hirwafashion</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#sec-6888">Stero</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#sec-391c">Apex Gleam</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#sec-391c">Vege Veg</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#sec-391c">Socially Me</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="/Portfolio.#sec-391c">Sabar Synthetic</a></li>
+            </ul>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span style="color: skyblue;font-weight: 500 ">IdeaBoat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="#">IdeaBoat</a>
+         
+      </div>
+    </div>
+  </footer>
+  </body>
+  
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <script>
+  AOS.init();
+   $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+   $(window).on('load', function() {
+    $('.venobox').venobox();
+  });
+</script>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?91126';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"30",
+      "marginRight":"50",
+      "position":"right"
+
+  },
+  "brandSetting":{
+      "brandName":"IdeaBoat",
+      "brandSubTitle":"Online",
+      "brandImg":"{{ url_for('static',filename='images/Idblogo.png') }}",
+      "welcomeText":"Hi, there!\nHow can we help you?",
+      "messageText":"Hello, I want to enquire about ",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"919023013754"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+</html>

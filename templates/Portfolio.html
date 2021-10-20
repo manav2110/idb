@@ -1,0 +1,226 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static',filename='Portfolio.css') }}" media="screen">
+
+    <!-- <section class="u-align-center-sm u-align-center-xs u-clearfix u-image u-section-1" id="carousel_e55b" data-image-width="1891" data-image-height="1080">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div id="carousel-ee08" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width-xs u-slider u-slider-1">
+          <ol class="u-absolute-hcenter u-carousel-indicators u-hidden-sm u-hidden-xs u-carousel-indicators-1">
+            <li data-u-target="#carousel-ee08" class="u-active u-active-palette-4-light-2 u-grey-15 u-hover-grey-15 u-shape-circle" data-u-slide-to="0" style="height: 10px; width: 10px;"></li>
+            <li data-u-target="#carousel-ee08" class="u-active-palette-4-light-2 u-grey-15 u-hover-grey-15 u-shape-circle" data-u-slide-to="1" style="height: 10px; width: 10px;"></li>
+          </ol>
+          <div class="u-carousel-inner" role="listbox">
+            <div class="u-active u-align-center u-carousel-item u-container-style u-slide u-white u-carousel-item-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <h1 class="u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-font-raleway u-text u-text-1">Creativity</h1>
+                <p class="u-large-text u-text u-text-variant u-text-2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+                <a href="https://nicepage.com/k/hospital-website-templates" class="u-btn u-btn-round u-button-style u-grey-80 u-hover-palette-5-base u-radius-17 u-btn-1">learn more</a>
+              </div>
+            </div>
+            <div class="u-align-center u-carousel-item u-container-style u-slide u-white u-carousel-item-2">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <h1 class="u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-font-raleway u-text u-text-palette-4-base u-text-3">Art Vision</h1>
+                <p class="u-large-text u-text u-text-variant u-text-4"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+                <p class="u-text u-text-5">Image from <a href="https://www.freepik.com/photos/background" class="u-border-1 u-border-black u-btn u-button-link u-button-style u-none u-text-body-color u-btn-2">Freepik</a>
+                </p>
+                <a href="https://nicepage.com/c/real-estate-html-templates" class="u-active-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-palette-2-light-1 u-palette-4-base u-btn-3">learn more</a>
+              </div>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-10 u-spacing-10 u-text-grey-40 u-text-hover-grey-70 u-carousel-control-1" href="#carousel-ee08" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+		c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+		c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-10 u-spacing-10 u-text-grey-40 u-text-hover-grey-70 u-carousel-control-2" href="#carousel-ee08" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+		c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+		c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section> -->
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-section-2" id="carousel_0122" data-aos="fade-up" data-aos-delay="200">
+      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-36">
+              <div class="u-layout-row">
+                <div class="u-container-style u-layout-cell u-palette-5-base u-size-60 u-layout-cell-1">
+                  <div class="u-container-layout u-container-layout-1" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="u-custom-font u-text u-text-1" data-animation-name="bounceIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="" >Portfolio</h5>
+                    <p class="u-align-justify u-text u-text-black u-text-2">We provide timely service to our clients and believe in delivering ace results. Reach out to us 24 X 7.<br>
+                      <br>&nbsp;We do what works.&nbsp;
+                    </p>
+                    <a href="#carousel_c523" class="u-btn u-btn-round u-button-style u-grey-80 u-hover-white u-radius-50 u-btn-1">Know More&nbsp; &nbsp;<span class="u-icon u-icon-1" ><svg class="u-svg-content" viewBox="0 0 30.727 30.727" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0   l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"></path></svg><img></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-24" data-aos="fade-up" data-aos-delay="200">
+              <div class="u-layout-col">
+                <div class="u-align-center u-container-style u-grey-80 u-hidden-xs u-layout-cell u-size-60 u-layout-cell-2">
+                  <div class="u-container-layout u-container-layout-2">
+                    <div class="u-hidden-xs u-image u-image-circle u-image-1" data-image-width="1200" data-image-height="800"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-section-3" id="carousel_c523" data-aos="fade-up" data-aos-delay="200">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-6 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-center-md u-align-center-sm u-align-right-lg u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="u-container-layout u-valign-bottom-sm u-valign-top-xs u-container-layout-1">
+                      <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="500" data-image-height="500"></div>
+                      <h2 class="u-align-center-xs u-custom-font u-font-oswald u-text u-text-1">HIRWAFASHION</h2>
+                      <p class="u-text u-text-2">We are a kurti manufacturer &amp; Cloth Manufacturer Company in Ahmadabad, we provides a wide range of &nbsp;kurti's and Cloth Material to meet the needs of every customer. From initial design to final quality assurance processes, we make sure our goods are reliable and exceptional. All the products are made IN-House</p>
+                      <a href="https://hirwafashion.com" class="u-btn u-btn-round u-button-style u-grey-80 u-hover-grey-15 u-radius-18 u-btn-1" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">View&nbsp;&nbsp;<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30 u-size-60-md" data-aos="fade-up" data-aos-delay="200">
+                <div class="u-layout-col">
+                  <div class="u-size-30">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-size-30 u-image-2" data-image-width="1080" data-image-height="1080">
+                        <div class="u-container-layout u-container-layout-2"></div>
+                      </div>
+                      <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
+                        <div class="u-container-layout u-container-layout-3">
+                          <img class="u-expanded u-image" src="{{ url_for('static',filename='images/23.jpg') }}" data-image-width="1080" data-image-height="1080">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-size-30" data-aos="fade-up" data-aos-delay="200">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                        <div class="u-container-layout u-container-layout-4">
+                          <img class="u-absolute-hcenter-xs u-expanded u-image" src="{{ url_for('static',filename='images/hirwafashion_feed1.jpg') }}" data-image-width="1080" data-image-height="1080">
+                        </div>
+                      </div>
+                      <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-5">
+                        <div class="u-container-layout u-container-layout-5">
+                          <img class="u-expanded u-image" src="{{ url_for('static',filename='images/hirwafashion_feed.jpg') }}" data-image-width="1080" data-image-height="1080">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-grey-10 u-section-4" id="sec-6888" data-aos="fade-up" data-aos-delay="200">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-gutter-6 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="u-container-layout u-container-layout-1">
+                      <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="500" data-image-height="500"></div>
+                      <h2 class="u-custom-font u-font-oswald u-text u-text-1">Stero</h2>
+                      <p class="u-text u-text-2">A newly established brand in the plastic household industry. Our brand is highly inspired with the aim of reaching the star with our innovative household product range and customer satisfactory relations.</p>
+                      <a href="https://stero.in" class="u-btn u-btn-round u-button-style u-grey-80 u-hover-grey-5 u-radius-18 u-btn-1" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">View&nbsp;&nbsp;<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30 u-size-60-md" data-aos="fade-up" data-aos-delay="200">
+                <div class="u-layout-col">
+                  <div class="u-size-30">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-size-30 u-image-2" data-image-width="955" data-image-height="538">
+                        <div class="u-container-layout u-container-layout-2"></div>
+                      </div>
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-3" data-image-width="964" data-image-height="538">
+                        <div class="u-container-layout u-valign-top u-container-layout-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-size-30" data-aos="fade-up" data-aos-delay="200">
+                    <div class="u-layout-row">
+                      <div class="u-align-left u-container-style u-image u-layout-cell u-size-30 u-image-4" data-image-width="958" data-image-height="531">
+                        <div class="u-container-layout u-container-layout-4"></div>
+                      </div>
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-5" data-image-width="964" data-image-height="547">
+                        <div class="u-container-layout u-container-layout-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-5" id="sec-391c" data-aos="fade-up" data-aos-delay="200">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1" data-aos="fade-up" data-aos-delay="200">Our Customers</h2>
+        <div class="u-expanded-width-xs u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+                <img class="u-image u-image-1" src="{{ url_for('static',filename='images/1.png') }}" data-image-width="150" data-image-height="150">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+                <img class="u-image u-image-2" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-07at3.37.22PM.jpeg') }}" data-image-width="500" data-image-height="500">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3" data-aos="fade-up" data-aos-delay="200">
+                <img class="u-image u-image-3" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-07at3.42.41PM.jpeg') }}" data-image-width="500" data-image-height="500">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4" data-aos="fade-up" data-aos-delay="200">
+                <img class="u-image u-image-4" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-09at2.10.35PM.jpeg') }}" data-image-width="1080" data-image-height="1080">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-5">
+                <img class="u-image u-image-5" src="{{ url_for('static',filename='images/4.png') }}" data-image-width="150" data-image-height="150">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-6" data-aos="fade-up" data-aos-delay="200">
+                <img class="u-image u-image-6" src="{{ url_for('static',filename='images/WhatsAppImage2021-06-07at3.41.00PM.jpeg') }}" data-image-width="500" data-image-height="500">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {% endblock %}

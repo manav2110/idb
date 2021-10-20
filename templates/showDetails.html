@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+{% for user in users %}
+<p> Hello {{ user[1]}} </p><br>
+<p> email : {{ user[2]}}</p><br>
+<p> number : {{ user[3] }} </p><br>
+<p> message : {{ user[4] }}</p><br>
+<p> <a href='/Edit/{{ user[0] }}'> Edit </a> </p>
+<p> <a href="/Delete/{{ user[0] }}"> Delete </a> </p>
+{% endfor %}
+</body>
+</html>
