@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import json
-from flask_mysqldb import MySQL
+from flaskext.mysql import MySQL
 from flask_mail import Mail
 import os
 from werkzeug.utils import secure_filename
