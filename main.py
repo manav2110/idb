@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
-import json
 from flaskext.mysql import MySQL
+import json
 from flask_mail import Mail
 import os
 from werkzeug.utils import secure_filename
@@ -10,14 +9,16 @@ local_server = True
 with open('config.json', 'r') as c:
     params = json.load(c)["params"]
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = ''
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_HOST'] = 'us-cdbr-east-04.cleardb.com'
+app.config['MYSQL_USER'] = 'bb2c94fd6e7156'
+app.config['MYSQL_PASSWORD'] = '99b4698a'
 app.config['MYSQL_DB'] = 'ideaboat'
 
 
 mysql = MySQL(app)
+print(mysql)
 
 app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
@@ -27,19 +28,6 @@ app.config.update(
     MAIL_PASSWORD = params['gmail-password']
 )
 mail = Mail(app)
-if local_server:
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
-else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['server_uri']
-db = SQLAlchemy(app)
-
-
-class Contact(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(80), nullable=False)
-    email = db.Column(db.String(220), unique=True, nullable=False)
-    number = db.Column(db.String(13), nullable=False)
-    message = db.Column(db.String(120), nullable=False)
 
 
 @app.route('/')
@@ -84,6 +72,7 @@ def blog3():
 
 @app.route('/Contact', methods=['GET', 'POST'])
 def contact():
+
     if (request.method == 'POST'):
         cur = mysql.connection.cursor()
         name = request.form.get('name', False)  # Full Name
@@ -92,13 +81,16 @@ def contact():
         message = request.form.get('message', False)  # His grade/class
 
         sequence = (name, email, number, message)
+        print(sequence)
         formula = "INSERT INTO contact (id, name, email, number, message) VALUES ('',%s,%s,%s,%s)"
+        print(formula)
         cur.execute(formula, sequence)
         mysql.connection.commit()
 
         mail.send_message('New message from ' + name,sender = email,recipients = [params['gmail-user']],
                           body = message)
     return render_template('Contact.html')
+    # return cur
 
 @app.route('/CompleteEdit',methods=['GET','POST'])
 def changePage():
@@ -161,4 +153,4 @@ def uploadFile():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
